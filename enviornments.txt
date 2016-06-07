@@ -1,0 +1,15 @@
+{
+  "name": "production",
+  "default_attributes": {
+    "apache2": {
+      "listen_ports": [
+        "80",
+        "443"
+      ]
+    }
+  },
+  "json_class": "Chef::Environment",
+   "description": "",
+  "chef_type": "environment"
+}
+

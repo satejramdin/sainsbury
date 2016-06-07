@@ -1,0 +1,29 @@
+#
+# Cookbook Name:: myapp
+# Recipe:: default
+#
+# Copyright 2016, YOUR_COMPANY_NAME
+#
+# All rights reserved - Do Not Redistribute
+#
+#
+#
+#package 'golang' do
+#  action :install
+#end
+
+
+cookbook_file '/etc/init.d/myappd' do
+  source 'myappd'
+  mode 0755
+end
+
+cookbook_file '/usr/local/bin/myapp' do
+  source 'myapp'
+  mode 0755
+end
+
+service 'myappd' do
+  action [:enable, :start]
+end
+
