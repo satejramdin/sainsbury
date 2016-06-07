@@ -37,10 +37,9 @@ d) Commit all your files to a public git repo of your choice, including a README
 
 Notes:- 
 This was developed on Amazon Linux machines 
-All code was hand written (apart from the 'host_file_update' cookbook - https://developer.rackspace.com/blog/chef-creating-dynamic-host-files/), although in production I would likely 
+All code was hand written (apart from the 'host_file_update' cookbook - ,
 consider forking and using the 'official' nginx, golang Chef repositories.
 Chef-solo was used for testing the recipes - and is included in the repo.
-go app code is pulled from a public repository, separate to this project ( https://github.com/completerevolution/sainsburys and https://github.com/completerevolution/sainsburys-app )
 The target OS is Amaon Linux, as it's the one I'm most used to (Amazon Linux equivilant). Many of the recipes are cross-family, by using 'package' as opposed to 'yum_package'. 
 With more work, it could be completely cross-family (Linux platform - Debian/CentOS)
 Both backend servers are referenced by static IP, but with some work, the nginx config template could be dynamically populated (either IPs or through DNS).
