@@ -1,0 +1,16 @@
+[root@ip-172-31-41-153 myapp]# nano CHANGELOG.md
+  GNU nano 2.5.3                                          File: CHANGELOG.md
+
+myapp CHANGELOG
+===============
+
+This file is used to list changes made in each version of the myapp cookbook.
+
+0.1.0
+-----
+- [your_name] - Initial release of myapp
+
+- - -
+Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
+
+The [Github Flavored Markdown page](http://github.github.com/github-flavored-markdown/) describes the differences between markdown on github and standard markdown.
